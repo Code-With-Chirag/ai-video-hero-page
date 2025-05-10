@@ -20,11 +20,11 @@ const FeatureCard = ({ title, description, icon: Icon, image, reversed = false }
         <div className="inline-block p-3 bg-feature-gradient rounded-2xl mb-6">
           <Icon className="h-7 w-7 text-editor-purple" />
         </div>
-        <h2 className="text-3xl font-bold mb-4">{title}</h2>
-        <p className="text-gray-600 text-lg mb-6">{description}</p>
+        <h2 className="text-3xl font-bold mb-4 text-white">{title}</h2>
+        <p className="text-gray-300 text-lg mb-6">{description}</p>
         <a 
           href="#" 
-          className="text-editor-purple font-medium hover:underline inline-flex items-center"
+          className="text-editor-light-purple font-medium hover:underline inline-flex items-center"
         >
           Learn more
           <svg 
@@ -47,7 +47,7 @@ const FeatureCard = ({ title, description, icon: Icon, image, reversed = false }
       </div>
       
       <div className={cn(
-        "order-1 bg-card-gradient p-4 rounded-xl shadow-lg", 
+        "order-1 glass-effect p-4 shadow-lg", 
         reversed ? "md:order-1" : "md:order-2"
       )}>
         <img

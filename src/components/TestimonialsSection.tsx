@@ -42,32 +42,32 @@ const testimonials: TestimonialProps[] = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 bg-white" id="testimonials">
+    <section className="py-20 bg-black" id="testimonials">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             What Our Users <span className="text-gradient">Say</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Join thousands of content creators who've revolutionized their workflow
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <Card key={index} className="glass-effect border-white/10 shadow-sm hover:shadow-md transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex justify-end mb-4">
                   <div className="text-2xl">{testimonial.platformIcon}</div>
                 </div>
-                <blockquote className="text-gray-700 mb-6">"{testimonial.content}"</blockquote>
+                <blockquote className="text-gray-300 mb-6">"{testimonial.content}"</blockquote>
                 <div className="flex items-center">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-r from-editor-purple to-editor-blue flex items-center justify-center text-white font-bold">
                     {testimonial.author.charAt(0)}
                   </div>
                   <div className="ml-3">
-                    <div className="font-semibold">{testimonial.author}</div>
-                    <div className="text-sm text-gray-500">{testimonial.role}</div>
+                    <div className="font-semibold text-gray-200">{testimonial.author}</div>
+                    <div className="text-sm text-gray-400">{testimonial.role}</div>
                   </div>
                 </div>
               </CardContent>
